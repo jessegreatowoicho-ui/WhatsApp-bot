@@ -76,4 +76,7 @@ async function startBot() {
         if (cmd.startsWith('!flip ')) {
             const parts = text.split(' ');
             const bet = parseInt(parts[1]); const choice = parts[2]?.toLowerCase();
-            if (bet >
+            if (bet > 0) {
+            const http = require('http')
+            const PORT = process.env.PORT || 3000
+            http.createServer((req, res) => res.end('Bot is running')).listen(PORT)
