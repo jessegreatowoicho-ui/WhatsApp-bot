@@ -30,12 +30,14 @@ async function startBot() {
 
     sock.ev.on('creds.update', saveCreds);
     sock.ev.on('connection.update', ({ qr, connection, lastDisconnect }) => {
-        if (qr) {
-            if (qr) {
+    
+    
+    if (qr) {
     console.log('\n\n===== SCAN THIS QR WITH WHATSAPP =====\n');
-    console.log(qr);
+    console.log(`https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent(qr)}`);
     console.log('\n======================================\n');
-            }
+}
+            
         }
         if(connection === 'close') {
             const shouldReconnect = lastDisconnect.error?.output?.statusCode!== DisconnectReason.loggedOut
