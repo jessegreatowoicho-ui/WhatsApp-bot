@@ -1,0 +1,10 @@
+{
+  "name": "casino-pokemon-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": { "start": "node bot.js" },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.14",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
