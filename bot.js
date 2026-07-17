@@ -1,5 +1,7 @@
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
+const http = require('http');
+http.createServer((req, res) => res.end('Bot is running')).listen(process.env.PORT || 3000);const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const qrcode = require('qrcode-terminal');
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const fs = require('fs');
 
 const DATA_FILE = 'bot_data.json';
