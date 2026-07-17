@@ -37,13 +37,13 @@ async function startBot() {
         console.log(`https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent(qr)}`);
         console.log('\n======================================\n');
     }
-    });
     if(connection === 'close') {
         const shouldReconnect = lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut
         console.log('Connection closed:', lastDisconnect.error);
         if(shouldReconnect) startBot()
     }
-});sock.ev.on('messages.upsert', async ({ messages }) => {
+});
+    sock.ev.on('messages.upsert', async ({ messages }) => {
         const msg = messages[0];
         if (!msg.message || msg.key.fromMe) return;
 
