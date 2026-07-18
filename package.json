@@ -1,4 +1,12 @@
-WhatsApp-bot/
-├── index.js          ← bot code
-├── package.json      ← the JSON I gave above
-└── .gitignore        ← ignore file
+{
+  "name": "whatsapp-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.5",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
