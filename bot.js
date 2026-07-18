@@ -3,11 +3,15 @@ const http = require('http');
 http.createServer((req, res) => res.end('Bot is running')).listen(process.env.PORT || 3000);
 
 const {
-    default: makeWASocket,useMultiFileAuthState,DisconnectReason,fetchLatestBaileysVersion= require('@whiskeysockets/baileys');
+    const {
+    default: makeWASocket,
+    useMultiFileAuthState,
+    DisconnectReason,
+    fetchLatestBaileysVersion
+} = require('@whiskeysockets/baileys');
 const fs = require('fs');
-}
 const pino = require('pino');
-
+}
 const DATA_FILE = 'bot_data.json';
 let data = { wallets: {}, players: {} };
 
