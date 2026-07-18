@@ -4,11 +4,7 @@ http.createServer((req, res) => res.end('Bot is running')).listen(process.env.PO
 
 const {
     const {
-    default: makeWASocket,
-    useMultiFileAuthState,
-    DisconnectReason,
-    fetchLatestBaileysVersion
-} = require('@whiskeysockets/baileys');
+    default: makeWASocket,useMultiFileAuthState,DisconnectReason,fetchLatestBaileysVersion} = require('@whiskeysockets/baileys');
 const fs = require('fs');
 const pino = require('pino');
 }
