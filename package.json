@@ -1,7 +1,7 @@
 {
   "name": "whatsapp-bot",
   "version": "2.0.0",
-  "description": "Multi-purpose WhatsApp bot built on Baileys - economy, RPG, games, group management, media, fun, utilities, and AI commands",
+  "description": "Multi-purpose WhatsApp bot built on Baileys",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
